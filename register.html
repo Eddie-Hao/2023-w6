@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>iexnd</title>
-    <script type="module" crossorigin src="/2023-w6/assets/main-35d1087e.js"></script>
-    <link rel="stylesheet" href="/2023-w6/assets/main-aad83841.css">
+    <script type="module" crossorigin src="/2023-w6/assets/main-6807f7c7.js"></script>
+    <link rel="stylesheet" href="/2023-w6/assets/main-8ad8b2c5.css">
   </head>
 
 <body>
@@ -83,7 +83,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content border border-3">
             <div class="modal-header position-relative border-3 p-8">
-                <h2 class="modal-title font-notoSerif fs-5 position-absolute top-50 start-50 translate-middle"
+                <h2 class="modal-title font-notoSerif fs-5 position-absolute top-50 start-50 translate-middle text-nowrap"
                     id="registerModalLabel">立刻成為7TAO會員</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -111,14 +111,22 @@
           </div>
         </div>
         <!-- 輸入欄位 -->
-        <form class="row flex-column align-items-center">
+        <form class="row flex-column align-items-center font-notoSans needs-validation" novalidate>
           <div class="col-lg-4 mb-4">
             <label for="user-account" class="form-label">帳號</label>
-            <input type="email" class="form-control fs-7 border border-2" id="user-account" placeholder="請輸入帳號">
+            <input type="text" class="form-control fs-7 border border-2" id="user-account" placeholder="請輸入帳號"
+              required>
+            <div class="invalid-feedback">
+              請輸入帳號
+            </div>
           </div>
           <div class="col-lg-4 mb-6 mb-lg-8">
             <label for="user-account" class="form-label">密碼</label>
-            <input type="email" class="form-control fs-7 border border-2" id="user-account" placeholder="請輸入密碼">
+            <input type="password" class="form-control fs-7 border border-2" id="user-account" placeholder="請輸入密碼"
+              required>
+            <div class="invalid-feedback">
+              請輸入密碼
+            </div>
           </div>
           <div class="col-lg-4 mb-6 mb-lg-8">
             <button type="submit" class="fs-7 btn btn-primary w-100 py-2 mb-4">
@@ -130,8 +138,8 @@
       </div>
       <footer class="py-6 py-lg-8 text-center border-top border-3">
     <p class="fs-10 fs-lg-9 font-notoSans">© 7TAO七逃. All-Rights Reserved</p>
-</footer>  </div>
-
+</footer>
+  </div>
   
 </body>
 
