@@ -71,32 +71,44 @@
               alt="logo-icon" class="cart-sparkler-img mb-4">
             <h2 class="font-notoSerif fs-5">結帳資訊</h2>
           </div>
-          <form class="row justify-content-center gx-0 font-notoSans">
+          <form class="row justify-content-center gx-0 font-notoSans needs-validation" novalidate>
             <div class="col-12 mb-4">
               <label for="ticket-check" class="form-label">取票資訊</label>
               <input type="text" class="form-control fs-7 border border-2 mb-1" id="ticket-check"
-                placeholder="請輸入身分證字號或護照號碼">
+                placeholder="請輸入身分證字號或護照號碼" required>
               <p class="fs-10 fs-lg-9 text-dark">請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 <span
-                  class="text-danger">護照號碼</span></p>
+                  class="text-danger">護照號碼</span>
+              </p>
+              <div class="invalid-feedback">
+                請依照上方指是輸入正確資料
+              </div>
             </div>
 
             <div class="col-12 mb-6 mb-lg-8">
               <p class="mb-2">付款方式</p>
               <div class="form-check mb-2">
-                <input class="form-check-input" type="radio" name="payment" id="payment-credit">
+                <input class="form-check-input" type="radio" name="payment" id="payment-credit" required>
                 <label class="form-check-label" for="payment-credit">
                   信用卡
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="payment" id="payment-atm">
+                <input class="form-check-input" type="radio" name="payment" id="payment-atm" required>
                 <label class="form-check-label" for="payment-atm">
                   ATM虛擬帳號
                 </label>
+                <div class="invalid-feedback">
+                  請選擇付款方式
+                </div>
               </div>
             </div>
-            <!-- 未登入，點擊此按鈕會跳至登入頁 register.html -->
+           
             <div class="col-lg-8 text-center">
+               <!-- 測試過使用 button 驗證 能正確顯示.invalid-feedback 效果 -->
+              <!-- <button type="submit" class="fs-7 btn btn-primary w-100 py-2 mb-4">
+                確認訂單並繳費 $8000
+                <i class="icofont-rounded-double-right ms-1"></i>
+              </button> -->
               <a href="./cart-success.html" class="fs-7 btn btn-primary w-100 py-2 mb-4">
                 確認訂單並繳費 $8000
                 <i class="icofont-rounded-double-right ms-1"></i>

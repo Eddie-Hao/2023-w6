@@ -1156,7 +1156,7 @@ $form-validation-states: (
     "icon": $form-feedback-icon-invalid,
     "tooltip-color": #fff,
     "tooltip-bg-color": var(--#{$prefix}danger),
-    "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}danger-rgb), $input-btn-focus-color-opacity),
+    "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}danger-rgb), 0.5), //$input-btn-focus-color-opacity 透明度
     "border-color": var(--#{$prefix}form-invalid-border-color),
   )) !default;
 // scss-docs-end form-validation-states
